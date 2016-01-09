@@ -1,0 +1,34 @@
+{
+    "ecmaFeatures": {
+        "blockBindings": true,
+        "forOf": true,
+        "jsx": true,
+        "modules": true,
+        "spread": true,
+        "templateStrings": true,
+        "experimentalObjectRestSpread": true,
+        "destructuring": true,
+        "arrowFunctions": true,
+        "objectLiteralComputedProperties": true
+    },
+    "rules": {
+        "semi": 2,
+        "comma-dangle": [2, "never"],
+        "no-dupe-args": 2,
+        "no-dupe-keys": 2,
+        "no-empty": 2,
+        "no-irregular-whitespace": 2,
+        "no-sparse-arrays": 2,
+        "no-unreachable": 2,
+        "eqeqeq": 2,
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+        "comma-style": [2, "last"],
+        "indent": [2, 2],
+        "quotes": [2, "single"],
+        "no-unused-vars": 2
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+    }
+}

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.form-group * {
+  display: block;
+}
+
+.form-group {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1em 0;
+  align-items: center;
+}
+
+form {
+  width: 60vw;
+}
+
+form input {
+  width: 40%;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  border: 1px solid silver;
+  border-radius: 2.5px;
+}
+
+form label {
+  width: 30%;
+}
+
+form .message {
+  width: 28%;
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: red;
+}
+
+.phone-number {
+  display: flex;
+  width: 40%;
+  position: relative;
+}
+
+.phone-number span {
+  font-size: 1.25rem;
+}
+
+.phone-number input:first-of-type {
+  width: 25%;
+}
+
+.phone-number:before {
+  display: block;
+  content: '+';
+  position: absolute;
+  left: -1.25rem;
+  top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.phone-number input:last-of-type {
+  width: 75%;
+}
+
+.invalid input {
+  border-color: red;
+  outline-color: red;
+}
