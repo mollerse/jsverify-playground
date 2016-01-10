@@ -5,9 +5,9 @@ module.exports = function phoneValidator({number, prefix}) {
   let messages = [];
 
   if(!validPrefix) {
-    messages.push('You need to enter a valid prefix');
+    messages.push('You need to enter a valid phone prefix');
   } else if(!validNumber) {
-    messages.push('You need to enter a valid number');
+    messages.push('You need to enter a valid phone number');
   }
 
   return messages;

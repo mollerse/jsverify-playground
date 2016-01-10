@@ -19,11 +19,6 @@ test('emailValidator: given valid email', function(t) {
   t.end();
 });
 
-test('emailValidator: given empty string', function(t) {
-  t.notOk(validValue(''), 'should be invalid');
-  t.end();
-});
-
 test('emailValidator: given obviously invalid email', function(t) {
   t.notOk(validValue('asdf'), 'should be invalid');
   t.end();

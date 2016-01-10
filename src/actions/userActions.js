@@ -1,6 +1,7 @@
 const UPDATE_NAME = module.exports.UPDATE_NAME = 'UPDATE_NAME';
 const UPDATE_EMAIL = module.exports.UPDATE_EMAIL = 'UPDATE_EMAIL';
 const UPDATE_PHONE = module.exports.UPDATE_PHONE = 'UPDATE_PHONE';
+const VALIDATE = module.exports.VALIDATE = 'VALIDATE';
 
 function fieldValueExtractor(handler) {
   return function(e) {
@@ -32,6 +33,14 @@ function updatePhone(value, id) {
   };
 }
 
+function validate(field) {
+  return {
+    type: VALIDATE,
+    field
+  };
+}
+
 module.exports.updateName = fieldValueExtractor(updateName);
 module.exports.updateEmail = fieldValueExtractor(updateEmail);
 module.exports.updatePhone = fieldValueExtractor(updatePhone);
+module.exports.validate = validate;
