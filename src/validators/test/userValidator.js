@@ -3,7 +3,7 @@ const test = require('tape');
 
 const tapeCheck = require('../../test-utils/tape-check.js');
 const userGenerator = require('../../test-utils/generators/user.js');
-const phonenumberGenerator = require('../../test-utils/generators/phonenumber.js');
+const phoneGenerator = require('../../test-utils/generators/phone.js');
 const validator = require('../userValidator.js');
 
 //Helpers
@@ -14,7 +14,7 @@ function validValue(val) {
 //Properties
 const validUsersAreValid = jsc.forall(userGenerator, validValue);
 const validUser = jsc.sampler(userGenerator)();
-const validPhone = jsc.sampler(phonenumberGenerator)();
+const validPhone = jsc.sampler(phoneGenerator)();
 
 //Cases
 test('userValidator: given valid user', function(t) {

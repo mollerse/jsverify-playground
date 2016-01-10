@@ -26,7 +26,7 @@ function validate(state, field) {
     }, {});
   }
 
-  let messages;
+  let messages = [];
   if(validator && state[field]) {
     messages = validator(state[field]);
   }
